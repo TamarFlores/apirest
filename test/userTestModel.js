@@ -1,42 +1,32 @@
-import UserModel from "../models/userModel.js";
+import TareaModel from "../models/ToDo.js";
 var inittest = async () => {
-  var usermodel = new UserModel();
-  /*usermodel.createUser(
-    "Test1",
-    "Test 1 lastname",
-    "test@gmail.com",
-    "1234",
+  var tareamodel = new TareaModel();
+  /*tareamodel.createTarea(
+    " 1.Imprimir",
+    " Imprimir 20 documentos",
     new Date(),
-    16
+    "13:00",
+    false,
   );
-  usermodel.createUser(
-    "Test2",
-    "Test 2 lastname",
-    "test2@gmail.com",
-    "1234",
+  tareamodel.createTarea(
+    "2.Analisis PC",
+    "Realizar analisis completo a las PC ",
     new Date(),
-    13
+    "15:00",
+    false,
   );
-  usermodel.createUser(
-    "Test1",
-    "Test 2 lastname",
-    "test3@gmail.com",
-    "1234",
+  tareamodel.createTarea(
+    "3.Backup",
+    "Realizar Backup completo a las PC",
     new Date(),
-    12
+    "hora333",
+    false,
   );
-  usermodel.createUser(
-    "Test1",
-    "Test 2 lastname",
-    "test4@gmail.com",
-    "1234",
-    new Date(),
-    16
-  );
-  console.log(await usermodel.getUsers());*/
-  //usermodel.deleteUser("60146018e49f7308a951795c");
 
-  //await usermodel.updateModel("60146018e49f7308a951795d", { name: "Ramon" });
-  //console.log(await usermodel.getUsers());
+  console.log(await tareamodel.getTareas());*/
+  //tareamodel.deleteTarea("603be916c1ebe2041ac4dc5c");
+
+  //await tareamodel.updateModel("603be916c1ebe2041ac4dc5b", { name: "Analisis de Software" });
+  //console.log(await tareamodel.getTareas());
 };
 inittest();

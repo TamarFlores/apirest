@@ -1,12 +1,7 @@
 import mongoose from "mongoose";
-import dotenv from "dotenv";
-dotenv.config();
-mongoose.connect(
-  `mongodb://${process.env.IPHOSTDB}:${process.env.PORTDB}/${process.env.NAMEDB}`,
-  {
-    useNewUrlParser: true,
-  }
-);
+mongoose.connect("mongodb://172.20.0.2:27017/examen", {
+useNewUrlParser: true,
+  });
 var db = mongoose.connection;
 db.on("error", () => {
   console.log("No se puede conectar con la base de datos");
