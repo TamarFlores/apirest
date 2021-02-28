@@ -7,14 +7,11 @@ var indexControler = new IndexController();
 var tareaController = new TareaController();
 
 
-/* GET home page. */
-/**
- * Endpoints de los usuarios
- * // Servicios de los usuarios
- */
+
 router.get("/", indexControler.index);
 router.get("/tarea", tareaController.getTareas);
 router.post("/tarea", tareaController.createTarea);
 router.put("/tarea/:id",tareaController.updateTarea);
 router.delete("/tarea/:id", tareaController.deleteTarea);
+router.put("/tarea/:done",tareaController.updateTareaRealizada);
 export default router;

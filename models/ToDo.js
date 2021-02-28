@@ -12,7 +12,7 @@ class TareaModel {
     this.mymodel = mongoose.model("tareas",this.TareaSchema);
 }
   /*} 
-  C. create
+  CREAR TAREAS
   */
   createTarea(name, description, date, hour,done) {
     var tarea = {
@@ -31,7 +31,7 @@ class TareaModel {
     });
   }
   /* 
-  R. read
+  LEER TAREAS
   */
   getTareas() {
       return new Promise((resolve, reject)=>{
@@ -46,7 +46,7 @@ class TareaModel {
       });
   }
   /*
-  U. update
+  ACTUALIZAR TAREAS
    */
   updateModel(id, tareaUpdate) {
     return new Promise((resolve, reject) => {
@@ -61,7 +61,7 @@ class TareaModel {
     });
   }
   /*
-  D. delete
+  ELIMINAR TAREAS
    */
   deleteTarea(id) {
     return new Promise((resolve, reject) => {
